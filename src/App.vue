@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <MainPage />
     <router-view/>
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import MainPage from "./views/MainPage";
+
 export default {
   components:{MainPage}
 }

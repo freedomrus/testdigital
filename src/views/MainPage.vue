@@ -26,17 +26,17 @@ export default {
 @import "src/assets/functions";
 
 .main{
-  background: url("../assets/temp/fon.png");
+  background: url("../assets/temp/fon.png") no-repeat;
   height: 100vh;
+  background-size: 100%;
+
 }
 .block__text,.block__title{
   color:white;
   font-family: 'Montserrat', sans-serif;
 }
 .main__block{
-  width: size(480, 1920);
-  height: size(432, 1920);
-  display: flex;
+  width: size(480, 1920);  display: flex;
   flex-direction: column;
   margin-top: size(268, 1920);
   margin-left: size(210, 1920);
@@ -64,6 +64,14 @@ export default {
 
 .block__button:active{
   box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+//!!!media!!!
+
+@media (max-width: 756px){
+  .main{
+    background: none;
+  }
 }
 
 </style>

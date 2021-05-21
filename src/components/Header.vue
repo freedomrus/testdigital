@@ -1,7 +1,8 @@
 <template>
  <div class="header">
   <div class="header__logo">
-    <div class="logo__img"></div></div>
+    <img src="../assets/temp/Vector.png" alt="" class="logo__img" >
+  </div>
   <div class="header__nav">
     <ul class="nav__container">
        <li><a href="">Главная</a></li>
@@ -19,7 +20,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles.scss";
+@import "../assets/styles.scss";
 
 ul,li,a {
   text-decoration: none;
@@ -47,9 +48,8 @@ ul{
 
 }
 .logo__img {
-  border: 5px solid white;
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   margin-left: size(210, 1920);
 
 }
@@ -61,6 +61,40 @@ ul{
 .header__nav{
   border-bottom: 2px solid #18A0FB;
   height: size(62, 1920);
+}
+
+//!!!media!!!
+
+@media (max-width: 756px){
+
+  ul,li,a{
+    display:none;
+  }
+  .header{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: #18A0FB;
+
+
+
+  }
+  .logo__img {
+    width: size(50, 756);
+    height: size(50, 756);
+    margin-left: size(100, 756);
+
+  }
+  .header__logo{
+  }
+  .nav__container{
+    width: size(960, 756);
+  }
+  .header__nav{
+    border-bottom: 2px solid #18A0FB;
+    height: size(62, 756);
+  }
 }
 
 
