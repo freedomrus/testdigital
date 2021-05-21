@@ -9,12 +9,21 @@
 
 
 <script>
+import Burger from "@/components/Burger.vue"
 
+
+export default{
+  components:{
+    Burger, 
+  }
+}
 
 </script>
 
 
 <style lang="scss">
 @import "@/assets/styles.scss";
+
+
 
 </style>
