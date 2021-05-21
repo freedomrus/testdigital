@@ -1,6 +1,6 @@
 <template>
     <div class="burger">
-        <Slide right class="burger" :crossIcon = " right ">
+        <Slide right class="burger">
             <a class="home" href="#">
                 <div>Главная</div>
             </a>
