@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <Header />
+    <MainPage />
     <router-view/>
   </div>
 </template>
 
 
 <script>
-import Header from '@/components/Header'
+import MainPage from "./views/MainPage";
 export default {
-
+  components:{MainPage}
 }
 
 
@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles.scss";
 
 
 </style>
