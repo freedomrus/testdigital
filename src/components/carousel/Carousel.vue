@@ -1,8 +1,8 @@
 <template>
     <div class="carousel"  @keydown="checkSlide($event)" tabindex="0">
         <slot></slot>
-        <button @click.prevent="next" class="btn btn-next">345345<i class="fa fa-angle-right"></i></button>
-        <button @click.prevent="prev" class="btn btn-prev">345345<i class="fa fa-angle-left"></i></button>
+        <button @click.prevent="next" class="btn btn-next"><img src="@/assets/temp/arrow_right.png" alt=""><i class="fa fa-angle-right"></i></button>
+        <button @click.prevent="prev" class="btn btn-prev"><img src="@/assets/temp/arrow_left.png" alt=""><i class="fa fa-angle-left"></i></button>
     </div>
 </template>
 <script>

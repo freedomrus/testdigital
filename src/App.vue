@@ -41,7 +41,6 @@ export default{
     }
     .btn {
         padding:5px 10px;
-        background-color:rgba(0,0,0,0.5);
         border:1px solid transparent;
         margin:5px 10px;
         color:#FFF;
