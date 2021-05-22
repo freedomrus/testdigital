@@ -15,10 +15,14 @@
 import Burger from "@/components/Burger.vue"
 import Slider from "@/components/Slider.vue"
 
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/swiper.scss';
 
 export default{
   components:{
-    Burger, Slider
+    Burger, Slider, Swiper, SwiperSlide,
   }
 }
 
@@ -28,9 +32,6 @@ export default{
 <style lang="scss">
 @import "@/assets/styles.scss";
 
-.slider_burger{
-  margin-top: 20vw;
-}
 
 .slider_burger{
   display: flex;
